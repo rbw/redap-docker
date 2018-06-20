@@ -8,8 +8,8 @@ RUN pip install --upgrade pip
 COPY ./app/requirements.txt /app
 RUN pip install -r /app/requirements.txt
 
-COPY ./app/lapdance /app
-COPY ./app/examples /app
+COPY ./app/lapdance /app/lapdance
+COPY ./app/examples /app/examples
 COPY ./app/keys.sh /_scripts
 COPY ./manage.sh /_scripts
 COPY ./app/.flaskenv /app
