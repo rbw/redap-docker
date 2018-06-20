@@ -1,0 +1,3 @@
+[submodule "lapdance"]
+	path = lapdance
+	url = https://github.com/rbw0/lapdance
