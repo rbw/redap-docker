@@ -8,7 +8,7 @@ RUN pip install --upgrade pip
 COPY ./app/requirements.txt /app
 RUN pip install -r /app/requirements.txt
 
-COPY ./app/lapdance /app/lapdance
+COPY ./app/redap /app/redap
 COPY ./app/examples /app/examples
 COPY ./app/keys.sh /_scripts
 COPY ./manage.sh /_scripts
