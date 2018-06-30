@@ -11,7 +11,7 @@ SERVER_FILE="/etc/nginx/conf.d/nginx.conf"
 
 
 # Get the number of workers for Nginx, default to 1
-USE_NGINX_WORKER_PROCESSES=${NGINX_WORKER_PROCESSES:-1}
+USE_NGINX_WORKER_PROCESSES=${WORKER_PROCESSES:-1}
 
 # Modify the number of worker processes in Nginx config
 sed -i "/worker_processes\s/c\worker_processes ${USE_NGINX_WORKER_PROCESSES};" ${NGINX_FILE}
